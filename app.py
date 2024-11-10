@@ -5,7 +5,7 @@ app = Flask(__name__)
 def hello_world():
     from uni_lessons_scraper import get_lessons
     events = get_lessons(False)
-    return 'Done'
+    return events
 
 
 if __name__ == "__main__":

@@ -77,7 +77,7 @@ def get_lessons(isFlutter):
             events.append(event_instance)
 
     events_data = [event.__dict__ for event in events]
-    with open('classes.json', "w") as json_file:
-        json.dump(events_data, json_file, indent=4)
+    # with open('classes.json', "w") as json_file:
+    #     json.dump(events_data, json_file, indent=4)
         
-    return events
+    return events_data
