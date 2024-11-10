@@ -1,9 +1,11 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/lessons')
 def hello_world():
-    return 'Hello from Koyeb'
+    from uni_lessons_scraper import get_lessons
+    events = get_lessons(False)
+    return 'Done'
 
 
 if __name__ == "__main__":
