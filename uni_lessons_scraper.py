@@ -4,7 +4,6 @@ from datetime import datetime, date
 import re
 import json
 import pytz
-from notion_lessons import add_lesson
 
 timezone = pytz.timezone('Europe/Rome')
 
